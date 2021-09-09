@@ -2,14 +2,12 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Cara {
+public class Bin {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        System.out.println("Jak dlouhou caru chces vykreslit?");
+        System.out.println("Zadej cislo");
         int x = sc.nextInt();
-        for (int i = 0; i < x; i++) {
-            System.out.print(".");
-        }
+
+        System.out.println(Integer.toString(x, 2));
     }
 }
