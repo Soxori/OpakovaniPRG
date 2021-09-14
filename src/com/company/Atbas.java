@@ -7,11 +7,11 @@ public class Atbas {
         Scanner sc = new Scanner(System.in);
         System.out.println("Text k zasifrovani:");
         String text = sc.nextLine();
-        String[] letters = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+        char[] letters = "abcdefghijklmnopqrstuvwxyz".toCharArray();
 
-        for (String word : letters) {
+        for (char word : letters) {
             if (text.contains(word)) {
-                System.out.println(text.replace(word, "X"));
+                System.out.println(text.replaceAll(word, "X"));
             }
         }
     }
